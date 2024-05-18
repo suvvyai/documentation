@@ -23,6 +23,7 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 locale_dirs = ["locale/"]
 language = 'ru'
+gettext_compact = False
 
 
 # -- Options for HTML output -------------------------------------------------
