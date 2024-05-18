@@ -9,7 +9,7 @@
 project = 'Suvvy AI'
 copyright = 'MySoft LLC'
 author = 'Suvvy team'
-release = '1'
+release = ''
 
 
 # -- General configuration ---------------------------------------------------
@@ -19,6 +19,7 @@ extensions = ['myst_parser']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+locale_dirs = ["locale/"]
 
 
 # -- Options for HTML output -------------------------------------------------
