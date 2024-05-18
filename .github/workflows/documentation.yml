@@ -13,10 +13,11 @@ jobs:
       - uses: actions/setup-python@v3
       - name: Install dependencies
         run: |
-          pip install sphinx furo myst_parser
+          pip install sphinx furo myst_parser sphinx-intl
       - name: Sphinx build
         run: |
-          sphinx-build doc _build
+          sphinx-build doc _build/ru -D language=ru
+          sphinx-build doc _build/en -D language=en
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
