@@ -5,9 +5,10 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import datetime
 
 project = 'Suvvy AI'
-copyright = 'MySoft LLC'
+copyright = f'MySoft LLC {datetime.date.today().year}'
 author = 'Suvvy team'
 release = ''
 
