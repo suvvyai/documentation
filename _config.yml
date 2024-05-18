@@ -1,0 +1,26 @@
+name: Suvvy Docs
+
+title: Suvvy Docs
+description: Suvvy Docs
+
+version: v1
+
+baseurl: ""
+permalink: /:slug/
+
+plugins:
+  - jekyll-redirect-from
+
+collections:
+  urls:
+    output: true
+    permalink: /:slug
+
+whitelist:
+  - jekyll-redirect-from
+
+redirect_from:
+  json: false
+
+include:
+  - _urls
